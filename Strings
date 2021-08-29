@@ -1,0 +1,27 @@
+#Indexing Strings
+#Messing around with strings and how they are indexed
+#Sam Tschirhart
+#08282021
+
+word = "tschirhart"
+
+print word[0]   #prints the first character in the string
+print word[9]   #prints the last character in the string
+print word[-2]  #prints the second to last character in the string, using a negative number
+
+#slicing indices
+#Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.
+#Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always equal to s:
+
+print word[3:6]     #prints 'hir'
+print word[:4]  #prints 'tschi'
+print word[2:]  #prints 'chirhart'
+
+#using an out of range slice on an index
+print word[40:]
+
+#creating a new string using the indexes
+print "hello" + word[2:]
+
+#using the built in function of len() to return the amount of characters in a string
+print len(word)
