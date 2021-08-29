@@ -1,0 +1,31 @@
+#Calculator
+#In this program, we use Python as a calculator
+#Sam Tschirhart
+#08282021
+
+print(2 + 2)    #addition
+print(2 * 3)    #mulitplication
+print(6 / 2)    #division
+print(17 / 3)    #division with a floated number
+print(17 // 3)  #division without a fractional part
+print(17 % 3)   #division, but returns the remainder
+print(5 ** 5)   # the power of 5/5 squared
+
+width = 20
+height = 5
+print(width * height)   #user defined variables used for math
+
+s = "this is not a \nnew line" #this wont print as a new line
+print(s) # but this will
+
+#messing around with parenthesis in the equations
+print( ((1 + 3) ** 4))
+
+print(3 *  "un" + "ium")
+
+
+
+
+
+myballshurt = 3
+print myballshurt
