@@ -1,0 +1,50 @@
+#Lists
+#This program is the first time Im using lists using Python
+#Sam Tschirhart
+#08282021
+
+#creating the list
+list = [1, 2, 3, 4, 5, 6, 7] 
+print list 
+
+
+#adding more things to the list 
+print list + [8, 9, 10, 11]
+
+#replacing values within a list
+list[2] = 4
+print list
+
+#using the append() method to add things to the end of a list
+list.append(8)
+print list
+
+#assigning to slices
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print letters
+
+# replace some values
+letters[2:5] = ['C', 'D', 'E']
+print letters
+
+# now remove them
+letters[2:5] = []
+print letters
+
+# clear the list by replacing all the elements with an empty list
+letters[:] = []
+print letters
+
+#built in function len() applies to lists as well
+letters = ['a', 'b', 'c', 'd']
+len(letters)
+
+#creating nest lists
+a = ['a', 'b', 'c']
+n = [1, 2, 3]
+x = [a, n]
+print x
+
+print x[0]
+
+print x[0][1]
