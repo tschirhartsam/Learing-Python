@@ -1,0 +1,17 @@
+#FIRSTRY
+#This is going to be my first attempt at connecting everything that I have learned in Python so far
+#it'll take user inputs and define them as a variable, and use that information to calculate something
+#to start, the first portion will just be the Pythagorean theorem
+
+
+#Taking the user input for the variables
+a = int(input("Please enter the first length: "))
+b = int(input("Please enter the second length: "))
+
+
+#Calculating the first portion of the equation
+c = (a * a) + (b * b)
+csquared = c ** .5
+
+#Printing the results of the equation
+print("The longest length of the triangle is: ", csquared)
