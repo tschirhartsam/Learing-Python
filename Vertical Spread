@@ -1,0 +1,54 @@
+#VERTSPREAD
+#A calculator for determining the possible profit received from the vertical spread options strategy
+#Sam Tschirhart
+#09012021
+
+#Getting the user input
+
+print("Hello! Welcome to the vertical spread calculator \n Based on the kind of vertical spread that you are using, please enter a number. \n 1: Bull Call Spread \n 2: Bear Call Spread \n 3: Bull Put Spread \n 4: Bear Put Spread ")
+vertspread = int(input("Please enter the number: "))
+lowstrike = int(input("Please enter the lowest strike price: "))
+highstrike = int(input("Please enter the highest strike price: "))
+prempaid = int(input("Please enter the premium that you've paid: "))
+    
+
+#Creating a if - elif framework for determining the equation to use
+
+if vertspread == 1:
+    
+    #doing the maths
+    breakeven = highstrike + prempaid
+
+    #printing the answer
+    print("Max loss possible: ", prempaid)
+    print("Breakeven point: ", breakeven)
+
+
+elif vertspread == 2:
+    #doing the maffs
+    breakeven = lowstrike + prempaid
+
+    #printing
+    print("Max proft: ", prempaid)
+    print("Breakeven point: ", breakeven)
+    
+
+elif vertspread == 3:
+    #doing the maths
+    breakeven = lowstrike + prempaid
+    maxloss = (highstrike - lowstrike) - prempaid
+
+    #printing
+    print("Max loss:", maxloss)
+    print("Breakeven point:", breakeven)
+
+  
+
+elif vertspread == 4:
+    #doing the maths
+    maxprof = (highstrike - lowstrike) - prempaid
+    breakeven = highstrike - prempaid
+    
+    #printing
+    print("Max profit: ", maxprof)
+    print("Breakeven point: ", breakeven)
