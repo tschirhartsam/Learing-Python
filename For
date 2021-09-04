@@ -1,0 +1,8 @@
+#FOR
+#Using the For function, which scans over each member of a sequence in order.
+#Sam Tschirhart
+#08302021
+
+words = ['cat', 'window', 'defenestrate']
+for w in words:     #the 'in' statement checks if a value exists in a sequence or not
+    print(w, len(w))
