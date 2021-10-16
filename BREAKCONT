@@ -1,0 +1,40 @@
+#BREAKCONT
+#Using break and continue statements, and else clauses on Loops
+#09062021
+#Sam Tschirhart
+
+for n in range(2, 10): #this defines n as a valule between 2 and 10
+    for x in  range(2, n): #this defines x as a value between 2 and the value of n
+        if n % x == 0:  #prints the remainder in division of n divided by x
+            print(n, 'equals', x, '*', n//x)    #prints
+            break
+
+
+    else: print(n, 'is a prime number') #a prompt that prints should the values not have any remainders or divisible values
+
+
+
+#using the continue statement in a for loop
+for num in range(2, 10):
+    if num % 2 == 0:
+        print("Found an even number", num)
+        continue
+    print("Found an odd number", num)
+
+#pass statements
+#the pass statement does nothing. can be used when a statement is required syntactically but the program requires no action.
+#an example:
+while True:
+    pass
+
+#or for creating minimal classes
+class MyEmptyClass:
+    pass
+
+
+
+
+
+
+
+    
