@@ -1,0 +1,26 @@
+#kata_practice_1
+#This is a python code that censors every character that is not the last 4 characters in a string
+#defining a function and allat
+#good pracitce for getting used to list functions in python
+
+#GAME PLAN:
+#find a way to iterate through a string
+#count the number of characters
+#subtract that number by 4
+#replace all characters position 0 - x with "#"
+#create if/else statement that'll just print the string if <4
+
+def maskify(cc):
+    cc_char = len(cc)
+    masked_char = cc_char - 4
+    new_cc = list(cc)
+    new_cc[0:masked_char] = ["#"]
+    print(new_cc)
+
+    if masked_char <= 4:
+        print(cc)
+
+card_num = input("Please enter your credit card number: ")
+
+maskify(card_num)
+
