@@ -1,0 +1,25 @@
+#practice 2
+#prompt taken from codewars
+#How old will I be in ___?
+
+#defining the function
+def yearcalc(year1 = 0, year2 = 0):
+    years_old = year2 - year1
+
+    if years_old == 0:
+        print("you were born this year!")
+    elif years_old >= 0:
+        print("you will be...", years_old, " years old!") 
+    elif years_old << 0:
+        years_old = years_old * -1
+        print("you will be born in...", years_old, " years!")
+    elif years_old == 1:
+        print("You are 1 year old!")
+
+#getting user input
+year1 = int(input("Please enter the first year!"))
+year2 = int(input("Please enter the second year!"))
+
+#using the function
+yearcalc(year1, year2)
+
