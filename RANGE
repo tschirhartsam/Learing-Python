@@ -1,0 +1,21 @@
+#RANGE
+#using the range function to print lists, and using the len function in conjunction to make a list appear to the side of a range.
+#09062021
+#Sam Tschirhart
+
+
+for i in range(15):
+    print(i)
+
+print (list(range(5,20)))
+print(list(range(0,100,5))) #adding a step to the range
+print(list(range(-10, -100, -5)))   #adding a step and using negative values for the range
+
+#using range() and len() together
+
+a = ['Hello', 'my', 'name', 'is', 'Sam']
+for i in range(len(a)):
+    print(i, a[i])
+
+#using the sum() function to add up all of the values in a given range
+print(sum(range(10)))
